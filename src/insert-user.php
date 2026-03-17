@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/database/database.php';
-//$pdo = new PDO('mysql:host=localhost;dbname=wikialuno', "root", "");
 session_start();
 
 $name = $_POST['name'];
@@ -19,7 +18,7 @@ try {
     $_SESSION['user_name'] = $name;
 
 } catch (PDOException $e) {
-    die('Erro real: ' . $e->getMessage());
+    die('Algo deu errado.');
 }
 
 ?>

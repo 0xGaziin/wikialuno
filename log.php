@@ -35,9 +35,9 @@
 
         <section id='login'>
             <h2>Faça o Login</h2>
-            <form action="" method='post'>
-                <input type="email" placeholder='Digite o seu e-mail'>
-                <input type="password" placeholder='Digite a sua senha'>
+            <form action="./src/login-user.php" method='post'>
+                <input type="email" name='email' placeholder='Digite o seu e-mail'>
+                <input type="password" name='password' placeholder='Digite a sua senha'>
                 <input type="text" placeholder='Você me achou? Como? Esperto!' class='invisible-input'>
                 <button type="submit">Enviar</button>
             </form>
