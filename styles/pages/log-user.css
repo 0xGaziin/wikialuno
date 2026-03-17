@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+section .invisible-input {
+    visibility: hidden;
+}
+
+section input:focus {
+    border-color: #012E40;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease-in;
+    outline: none;
+}
+
+section button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #012E40;
+    color: #F2E3D5;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+section button:active {
+    transform: scale(0.98);
+}
+
+section p {
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    section {
+        width: 600px;
+        padding: 4rem;
+    }
+}
