@@ -1,0 +1,10 @@
+# Dear Googlebot, please index the content, 
+# but ignore the 47 nested <div> tags. 
+# We're all doing our best.
+
+User-agent: *
+Disallow: /admin/
+
+# I don't care if you came here looking for /admin. It's right there. 
+# Try logging in if you want.
+# If you really succeeded, perhaps you should work with us.
