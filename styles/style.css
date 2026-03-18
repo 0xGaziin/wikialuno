@@ -57,3 +57,7 @@ footer {
     margin-top: auto;
     text-align: center;
 }
+
+.bold {
+    font-weight: bold;
+}
