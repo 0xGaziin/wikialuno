@@ -16,6 +16,7 @@ try {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_logged'] = true;
         $_SESSION['user_name'] = $user['name'];
+        $_SESSION['user_email'] = $user['email'];
     } else {
         die('Dados incorretos.');
     }

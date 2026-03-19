@@ -13,12 +13,19 @@ try {
         ':e' => $email,
         ':p' => $password
     ]);
+    
+    $searchId = $pdo->prepare('SELECT id FROM users WHERE email = :e');
+    $searchId->execute([
+        ':n' => $email
+    ]);
+
+    $fetchUser = $pdo->fetch(PDO::FETCH_ASSOC);
 
     $_SESSION['user_logged'] = true;
     $_SESSION['user_name'] = $name;
-
+    $_SESSION['user_email'] = $email;
+    $_SESSION['user_id'] = $fetchUser['id'];
 } catch (PDOException $e) {
     die('Algo deu errado.');
 }
-
 ?>

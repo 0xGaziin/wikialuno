@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>WikiAluno</h1>
+        <h1>Cadastro e Login</h1>
         <nav>
             <a href="./index.html" title="Ir para a página de início">Início</a>
             <a href="./log.php" title="Criar uma conta nova">Cadastro</a>
