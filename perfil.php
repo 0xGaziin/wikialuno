@@ -33,7 +33,7 @@ if (!isset($_SESSION['user_logged']) && !isset($_SESSION['user_name'])) {
             <h2>Perfil de @<?php echo $_SESSION['user_name'] ?></h2>
             <p>
                 <span class='bold'>Atenção: </span>
-                Este perfil é gerado pelo próprio usuário mediante a sua conta. Nós tomamos todas as medidas necessárias em relação a links, mas você ainda deve se previnir.
+                Este perfil é gerado pelo próprio usuário mediante a sua conta. Nós tomamos todas as medidas necessárias em relação a links, mas você ainda deve se prevenir.
             </p>
         </section>
         
