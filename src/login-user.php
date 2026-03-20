@@ -17,6 +17,7 @@ try {
         $_SESSION['user_logged'] = true;
         $_SESSION['user_name'] = $user['name'];
         $_SESSION['user_email'] = $user['email'];
+        $_SESSION['user_id'] = $user['id'];
     } else {
         die('Dados incorretos.');
     }
