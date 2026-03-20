@@ -8,16 +8,7 @@
     <title>WikiAluno</title>
 </head>
 <body>
-    <header>
-        <h1>WikiAluno</h1>
-        <nav>
-            <a href="./index.html" title="Ir para a página de início">Início</a>
-            <a href="./log.php" title="Criar uma conta nova">Cadastro</a>
-            <a href="./log.php" title="Entrar em uma conta pré-existente">Login</a>
-            <a href="./courses.php" title="Ver os cursos disponíveis na página">Cursos</a>
-            <a href="./perfil.php" title="Ver o seu perfil">Meu Perfil</a>
-        </nav>
-    </header>
+    <?php include './components/header.php' ?>
 
     <main>
         <section>
@@ -49,8 +40,6 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Todos os direitos reservados.</p>
-    </footer>
+    <?php include './components/footer.php' ?>
 </body>
 </html>

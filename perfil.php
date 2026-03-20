@@ -17,16 +17,7 @@ if (!isset($_SESSION['user_logged']) && !isset($_SESSION['user_name'])) {
     <title>Perfil de <?php echo $_SESSION['user_name'] ?></title>
 </head>
 <body>
-    <header>
-        <h1>Perfil de @<?php echo $_SESSION['user_name'] ?></h1>
-        <nav>
-            <a href="./index.html" title="Ir para a página de início">Início</a>
-            <a href="./log.php" title="Criar uma conta nova">Cadastro</a>
-            <a href="./log.php" title="Entrar em uma conta pré-existente">Login</a>
-            <a href="./courses.php" title="Ver os cursos disponíveis na página">Cursos</a>
-            <a href="./perfil.php" title="Ver o seu perfil">Meu Perfil</a>
-        </nav>
-    </header>
+    <?php include './components/header.php' ?>
 
     <main>
         <section>

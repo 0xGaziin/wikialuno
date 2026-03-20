@@ -16,16 +16,7 @@ $courses = $queryListCourses->fetchAll(PDO::FETCH_ASSOC);
     <title>Cursos</title>
 </head>
 <body>
-    <header>
-        <h1>Cursos</h1>
-        <nav>
-            <a href="./index.html" title="Ir para a página de início">Início</a>
-            <a href="./log.php" title="Criar uma conta nova">Cadastro</a>
-            <a href="./log.php" title="Entrar em uma conta pré-existente">Login</a>
-            <a href="./cursos.php" title="Ver os cursos disponíveis na página">Cursos</a>
-            <a href="./perfil.php" title="Ver o seu perfil">Meu Perfil</a>
-        </nav>
-    </header>
+    <?php include './components/header.php' ?>
 
     <main>
         <section>
