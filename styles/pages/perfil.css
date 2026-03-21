@@ -1,5 +1,3 @@
-
-
 .perfil {
     background-color: white;
 }
@@ -11,4 +9,9 @@
 
 .perfil p {
     text-align: center;
+}
+
+.description {
+    background-color: white;
+    text-align: justify;
 }
