@@ -32,7 +32,9 @@ if (!$listUsers) { die('Usuário não encontrado.'); }
 
     <main>
         <section class='without-background title-section'>
-            <h2>@<?php echo $listUsers['name'] ?></h2>
+            <h2>
+                @<?php echo htmlspecialchars($listUsers['name'], ENT_QUOTES, 'UTF-8') ?>
+            </h2>
             <p>
                 <span class='bold'>Atenção: </span>
                 Este perfil é gerado pelo próprio usuário mediante a sua conta. Nós tomamos todas as medidas necessárias em relação a links, mas você ainda deve se prevenir.
