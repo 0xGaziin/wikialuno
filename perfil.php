@@ -14,6 +14,8 @@ $queryFetchUser->execute([
 ]);
 
 $listUsers = $queryFetchUser->fetch(PDO::FETCH_ASSOC);
+
+if (!$listUsers) { die('Usuário não encontrado.'); }
 ?>
 
 <!DOCTYPE html>
