@@ -15,11 +15,6 @@ try {
         ':d' => $description,
         ':i' => $_SESSION['user_id']
     ]);
-
-    $userId = $_SESSION['user_id'];
-
-    header("Location: ../perfil.php?id=$userId");
-    exit();
 } catch(PDOException $e) {
     die('Algo deu errado.' . $e->getMessage());
 }

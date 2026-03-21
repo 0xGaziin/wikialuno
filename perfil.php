@@ -29,8 +29,8 @@ $listUsers = $queryFetchUser->fetch(PDO::FETCH_ASSOC);
     <?php include './components/header.php' ?>
 
     <main>
-        <section>
-            <h2>Perfil de @<?php echo $listUsers['name'] ?></h2>
+        <section class='without-background title-section'>
+            <h2>@<?php echo $listUsers['name'] ?></h2>
             <p>
                 <span class='bold'>Atenção: </span>
                 Este perfil é gerado pelo próprio usuário mediante a sua conta. Nós tomamos todas as medidas necessárias em relação a links, mas você ainda deve se prevenir.
@@ -52,6 +52,17 @@ $listUsers = $queryFetchUser->fetch(PDO::FETCH_ASSOC);
                     <?php echo $parsedown->text($listUsers['aboutMe']); ?>
                 </p>
             </section>
+
+        </section>
+
+        <section class='courses'>
+            <h2>Meus Cursos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam qui, incidunt quos eaque rerum. Vero, soluta temporibus dignissimos suscipit enim sit ab itaque incidunt dolorum quis voluptate obcaecati est?</p>
+        </section>
+
+        <section class='courses'>
+            <h2>Meus Cursos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam qui, incidunt quos eaque rerum. Vero, soluta temporibus dignissimos suscipit enim sit ab itaque incidunt dolorum quis voluptate obcaecati est?</p>
         </section>
     </main>
 
