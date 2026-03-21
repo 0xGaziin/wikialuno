@@ -59,11 +59,6 @@ $listUsers = $queryFetchUser->fetch(PDO::FETCH_ASSOC);
             <h2>Meus Cursos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam qui, incidunt quos eaque rerum. Vero, soluta temporibus dignissimos suscipit enim sit ab itaque incidunt dolorum quis voluptate obcaecati est?</p>
         </section>
-
-        <section class='courses'>
-            <h2>Meus Cursos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam qui, incidunt quos eaque rerum. Vero, soluta temporibus dignissimos suscipit enim sit ab itaque incidunt dolorum quis voluptate obcaecati est?</p>
-        </section>
     </main>
 
     <footer>
