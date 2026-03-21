@@ -12,29 +12,60 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Geneva, Tahoma, sans-serif;
-    color: #253540;
+    background-color: #f3efed;
+    color: #212121;
 }
 
 header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 2.5rem;
+    background: linear-gradient(180deg, #F3F9FD 0%, #E1EFF9 100%);
+    border-bottom: 1px solid #C8E1F3;
+    color: #005A9E;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #242424;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 2.5rem;
-    background-color: #012E40;
-    color: #F2F2F2;
+    padding: 12px 5%;
+    background: #ffffff;
+    border-bottom: 1px solid #edebe9;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    gap: 24px;
 }
 
 nav a {
-    margin-left: 1rem;
     text-decoration: none;
-    color: #DEEFE7;
+    color: #616161;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    position: relative;
+    padding: 4px 0;
 }
 
 nav a:hover {
-    color: hsl(152, 35%, 50%);
-    transition: color 0.3s ease-in-out;
+    color: #0078d4;
+}
+
+nav a[href="./courses.php"] {
+    color: #242424;
+    font-weight: 600;
+}
+
+nav a[href*="perfil.php"] {
+    margin-left: auto;
+    color: #0078d4;
+    font-weight: 600;
 }
 
 main {
@@ -44,28 +75,20 @@ main {
 }
 
 section {
-    background-color: #d5e1f2;
     border-radius: 8px;
     padding: 2rem;
     margin-top: 15px;
 }
 
 footer {
-    background-color: #A4B8BF;
-    color: #050A0D;
-    padding: 2.2rem;
-    margin-top: auto;
+    background-color: #f2f2f2;
+    color: #616161;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 12px;
     text-align: center;
 }
 
 .bold {
     font-weight: bold;
-}
-
-.observation {
-    font-size: 16px;
-}
-
-.without-background {
-    background-color: #FFF;
 }

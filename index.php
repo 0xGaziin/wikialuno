@@ -12,30 +12,30 @@
 
     <main>
         <section>
-            <h2>Cursos Disponibilizados Gratuitamente</h2>
+            <h2>Organize seu aprendizado. Alcance mais.</h2>
             <p>
-                O WikiAluno centraliza conteúdos técnicos de alta qualidade para complementar sua formação acadêmica. Tenha acesso a materiais atualizados sobre programação, infraestrutura e design, focados nas demandas reais do mercado de trabalho e no desenvolvimento de projetos práticos.
+                O WikiAluno centraliza conteúdos técnicos de alta qualidade para impulsionar sua formação. Tenha acesso a materiais atualizados sobre programação e infraestrutura, desenhados para conectar você às demandas do mercado e ao desenvolvimento de projetos reais.
             </p>
         </section>
 
         <section>
-            <h2>Suporte ao Estudante e Bem-Estar</h2>
+            <h2>Equilíbrio para sua rotina acadêmica.</h2>
             <p>
-                Acreditamos que o desempenho acadêmico está diretamente ligado à saúde mental. Esta seção oferece orientações para organização de rotina, gestão de estresse e canais de apoio, garantindo que o aluno tenha o suporte necessário para enfrentar os desafios do período letivo.
+                Acreditamos que o alto desempenho nasce do bem-estar. Encontre recursos para organizar seus estudos, gerenciar o estresse e acessar canais de apoio, garantindo que você tenha as ferramentas necessárias para focar no que realmente importa: sua evolução.
             </p>
         </section>
 
         <section>
-            <h2>Comunidade Ativa</h2>
+            <h2>Conecte-se. Colabore. Construa.</h2>
             <p>
-                Promovemos um ambiente de troca de conhecimento onde estudantes e desenvolvedores interagem para solucionar problemas e construir soluções. Participe de fóruns, colabore em projetos de código aberto e amplie sua rede de contatos profissionais desde o início da sua trajetória.
+                Faça parte de um ecossistema onde o conhecimento é compartilhado. Interaja com outros desenvolvedores para solucionar desafios, colabore em projetos de código aberto e comece a construir sua rede profissional desde o primeiro dia de aula.
             </p>
         </section>
 
         <section>
-            <h2>Democratização do Conhecimento Técnico</h2>
+            <h2>Tecnologia acessível para todos.</h2>
             <p>
-                O WikiAluno é uma iniciativa sem fins lucrativos que visa reduzir a barreira de acesso ao ensino tecnológico de qualidade. Oferecemos uma curadoria de conteúdos técnicos avançados, permitindo que estudantes de todas as origens desenvolvam competências em programação e sistemas sem qualquer custo.
+                O WikiAluno é uma iniciativa dedicada a reduzir barreiras. Oferecemos curadoria técnica avançada sem custos, permitindo que estudantes de todas as origens desenvolvam competências críticas em sistemas e programação para o futuro.
             </p>
         </section>
     </main>
