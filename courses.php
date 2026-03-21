@@ -30,8 +30,8 @@ $courses = $queryListCourses->fetchAll(PDO::FETCH_ASSOC);
             <?php foreach($courses as $course) : ?>
                 <h2> <?php echo $course['nameCourse'] ?> </h2>
                 <p> <?php echo $course['description'] ?> </p>
+                <a href="./details.php?view=<?php echo $course['id'] ?>" target="_blank">Veja Mais</a>
             <?php endforeach; ?>
-            <a href="http://" target="_blank">Veja Mais</a>
         </section>
     </main>
 
