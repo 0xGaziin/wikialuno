@@ -1,0 +1,23 @@
+
+
+@media (min-width: 728px) {
+    main {
+        width: 70vw;
+    }
+
+    div.main-information-section {
+        display: flex;
+        gap: 2rem;
+    }
+
+    div.main-information-section > section {
+        background-color: #1e293b;
+        color: #cbd5e1;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        border: 1px solid rgba(0, 0, 0, 0.05); /* Borda sutil opcional para mais definição */
+    }
+
+    div.main-information-section > section > h2 {
+        text-align: center;
+    }
+}
