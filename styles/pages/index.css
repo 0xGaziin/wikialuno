@@ -1,23 +1,92 @@
+.hero-section {
+    text-align: center;
+    padding: 100px 20px 40px;
+}
 
+.hero-section h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(120deg, #FFFFFF 0%, #58A6FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2px;
+}
+
+.hero-section p {
+    color: #8B949E;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.main-information-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.info-card {
+    background-color: #161B22;
+    color: #C9D1D9;
+    border: 1px solid #30363D;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-card h2 {
+    color: #F0F6FC;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.courses-cta {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid #21262D;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 32px;
+    background-color: #238636;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2ea043;
+}
 
 @media (min-width: 728px) {
     main {
-        width: 70vw;
+        width: 85vw;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    div.main-information-section {
-        display: flex;
+    .main-information-section {
+        flex-direction: row;
         gap: 2rem;
     }
 
-    div.main-information-section > section {
-        background-color: #1e293b;
-        color: #cbd5e1;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-        border: 1px solid rgba(0, 0, 0, 0.05); /* Borda sutil opcional para mais definição */
+    .info-card {
+        flex: 1;
     }
 
-    div.main-information-section > section > h2 {
-        text-align: center;
+    .info-card:hover {
+        transform: translateY(-10px);
+        border-color: #58A6FF;
+        box-shadow: 0 15px 40px rgba(88, 166, 255, 0.1);
     }
 }

@@ -1,9 +1,8 @@
 <?php
 require_once __DIR__ . '/src/database/database.php';
 
-$queryListCourses = $pdo->prepare('SELECT * FROM courses');
+$queryListCourses = $pdo->prepare('SELECT id, nameCourse, description FROM courses');
 $queryListCourses->execute();
-
 $courses = $queryListCourses->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -13,29 +12,29 @@ $courses = $queryListCourses->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Cursos</title>
+    <link rel="stylesheet" href="./styles/pages/courses.css">
+    <title>Cursos | WikiAluno</title>
 </head>
 <body>
     <?php include './components/header.php' ?>
 
-    <main>
-        <section>
-            <h2>Cursos Disponíveis</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias mollitia ad sapiente saepe magni aliquam voluptatum cum voluptates totam eaque aperiam, consequatur maxime laudantium dolorum quasi libero commodi magnam eius.
-            </p>
-        </section>
-
-        <section>
+    <main class="container">
+        <section class="courses-grid">
             <?php foreach($courses as $course) : ?>
-                <h2> <?php echo $course['nameCourse'] ?> </h2>
-                <p> <?php echo $course['description'] ?> </p>
-                <a href="./details.php?view=<?php echo $course['id'] ?>" target="_blank">Veja Mais</a>
+                <article class="course-card">
+                    <div class="card-content">
+                        <h3><?php echo htmlspecialchars($course['nameCourse']) ?></h3>
+                        <p><?php echo htmlspecialchars($course['description']) ?></p>
+                    </div>
+                    <a href="./details.php?view=<?php echo $course['id'] ?>" class="btn-view">
+                        Veja Mais
+                    </a>
+                </article>
             <?php endforeach; ?>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2026 - Todos os direitos reservados.</p>
     </footer>   
 </body>

@@ -1,17 +1,20 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
-
-<nav>
-    <a href="./index.php" title="Ir para a página de início">Início</a>
-    <a href="./log.php" title="Criar uma conta nova">Cadastro</a>
-    <a href="./log.php" title="Entrar em uma conta pré-existente">Login</a>
-    <a href="./courses.php" title="Ver os cursos disponíveis na página">Cursos</a>
-    <?php if (isset($_SESSION['user_logged']) && isset($_SESSION['user_id'])) : ?>
-        <a href="./perfil.php?id=<?php echo $_SESSION['user_id'] ?>" title="Ver o seu perfil">Meu Perfil</a>
-    <?php endif; ?>
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="./index.php" class="logo">WikiAluno</a>
+        <div class="nav-links">
+            <a href="./index.php">Início</a>
+            <a href="./courses.php">Cursos</a>
+            <?php if (isset($_SESSION['user_logged'])) : ?>
+                <a href="./perfil.php?id=<?php echo $_SESSION['user_id'] ?>" class="btn-profile">Meu Perfil</a>
+            <?php else : ?>
+                <a href="./log.php">Login</a>
+                <a href="./log.php" class="btn-signup">Cadastrar</a>
+            <?php endif; ?>
+        </div>
+    </div>
 </nav>
-
-<header>
-    <h1>Seu conhecimento, planejado.</h1>
-</header>

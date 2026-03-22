@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A rede social estudantil feita para você">
+    <meta name="description" content="WikiAluno - Plataforma de aprendizado e organização para desenvolvedores.">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/pages/index.css">
-    <title>WikiAluno</title>
+    <title>WikiAluno | Evolução Constante</title>
 </head>
 <body>
     <?php include './components/header.php' ?>
 
     <main>
+        <section class="hero-section">
+            <h1>Seu conhecimento, planejado.</h1>
+            <p>A plataforma feita para organizar seus estudos de programação e impulsionar sua carreira técnica.</p>
+        </section>
+
         <div class='main-information-section'>
-            <section>
-                <h2>Organize seu aprendizado.</h2>
+            <article class="info-card">
+                <h2>Organize seu aprendizado</h2>
                 <p>
-                    O WikiAluno centraliza conteúdos de programação e infraestrutura para impulsionar sua formação com projetos reais e foco no mercado.
+                    Centralize conteúdos de programação e infraestrutura para impulsionar sua formação com projetos reais e foco total no mercado de trabalho.
                 </p>
-            </section>
+            </article>
     
-            <section>
-                <h2>Equilíbrio acadêmico.</h2>
+            <article class="info-card">
+                <h2>Equilíbrio acadêmico</h2>
                 <p>
-                    Desempenho e bem-estar caminham juntos. Encontre recursos para organizar seus estudos, gerenciar o estresse e focar na sua evolução.
+                    O alto desempenho nasce do bem-estar. Acesse recursos para gerenciar o estresse, organizar rotinas e garantir sua saúde mental.
                 </p>
-            </section>
+            </article>
         </div>
 
-        <div class='courses-information'>
-            <section>
-                <h2>Conheça alguns de nossos cursos</h2>
-            </section>
-        </div>
+        <section class='courses-cta'>
+            <h2>Conheça nossos cursos</h2>
+            <p>Trilhas de aprendizado pensadas do iniciante ao avançado.</p>
+            <a href="./courses.php" class="btn-primary">Ver todos os cursos</a>
+        </section>
     </main>
 
     <?php include './components/footer.php' ?>
